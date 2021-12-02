@@ -13,13 +13,15 @@ const app = () => {
   const timeDisplay = document.querySelector('.time-display');
   const timeSelect = document.querySelectorAll('.time-select button');
 
-  //Get length of the outline
+  //Get length of the outline. This method can only be used with SVG.
   const outlineLength = outline.getTotalLength();
 
   //Duration -> is a fake duration, is not the duration of the song. When the time expires the song is gonna stop.
   let fakeDuration = 600;
 
-  //The stroke-dasharray attribute is a presentation attribute defining the pattern of dashes and gaps used to paint the outline of the shape.
+  /*The stroke-dasharray attribute is a presentation attribute defining the pattern of dashes and gaps used to paint the outline of the shape.
+  The stroke-dashoffset attribute is a presentation attribute defining an offset on the rendering of the associated dash array.
+  */
   outline.style.strokeDasharray = outlineLength;
   outline.style.strokeDashoffset = outlineLength;
 
@@ -61,7 +63,7 @@ const app = () => {
   };
 
   //we can animate the circle
-  //This function runs everytime the son runs, so evertyime the song is running this function is gonna keep updating. When the song stops the function stops.
+  //This function runs everytime the song runs, so evertyime the song is running this function is gonna keep updating. When the song stops the function stops.
   song.ontimeupdate = () => {
     let currentTime = song.currentTime;
     let elapsed = fakeDuration - currentTime;
