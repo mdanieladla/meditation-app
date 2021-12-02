@@ -34,7 +34,7 @@ This is a meditation sounds app that the user can enjoy by picking the amount of
 ### What I learned
 
 With this challenge I have improved my layout skills (HTML5, CSS3) and basic JS.
-This is the first version of the meditation app, the next version is gonna include a mobile version.
+I am currently working on the improvment of the mobile version.
 
 ## Author
 
