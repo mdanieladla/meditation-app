@@ -116,6 +116,11 @@
     .video{
         object-fit: cover;
         height: 100vh;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        z-index: -10;
     }
     
     .time-select button, .sound-picker button{
@@ -145,6 +150,11 @@
     .video{
         object-fit: cover;
         height: 100vh;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        z-index: -10;
     }
     
     .time-select button{
